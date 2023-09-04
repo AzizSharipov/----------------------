@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин уличной мебели</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/Philosopher.css">
+    <link rel="stylesheet" href="./css/Inter.css">
+    <link rel="stylesheet" href="./css/aos.css">
+</head>
+<body style="overflow-x: hidden;">
+    <!-- NAVBAR -->
+    <nav class="mb-3 position-fixed w-100 py-2" id="navbar" style="z-index: 6;">
+        <div class="navbar-dropdown" id="nav-dropdown">
+            <div class="row mb-4 px-4">
+                <label class="col navbar-contact">г. Алматы, ул. Абая д.68</label>
+                <label class="col navbar-contact">Звоните, Пн-Пт с 10:00-18:00 <br><span class="navbar-number ms-2" style="line-height: 40px;">+7 (900) 900 - 10 - 10</span></label>
+            </div>
+            <ul>
+                <li class="mt-2" style="line-height: 35px;"><a href="#Main" class="navbar-links active-nav-link">Главная</a></li>
+                <li class="mt-2" style="line-height: 35px;"><a href="#aboutCompany" class="navbar-links">О компании</a></li>
+                <li class="mt-2" style="line-height: 35px;"><a href="#aboutProduct" class="navbar-links">Об изделиях</a></li>
+                <li class="mt-2" style="line-height: 35px;"><a href="#feedback" class="navbar-links">Отзывы</a></li>
+                <li class="mt-2" style="line-height: 35px;"><a href="#cooperation" class="navbar-links">Сотрудничество</a></li>
+                <li class="mt-2" style="height: 40px;">
+                    <ul class="d-flex p-0 align-items-center">
+                        <li class="p-2 border border-3 rounded-circle ani-icon-SM"><a href="#" ><img src="./img/Social-Media/Instagram logo.svg" alt="Instagram" class=""></a></li>
+                        <li class="p-2 border border-3 rounded-circle ani-icon-SM ms-4"><a href="#" ><img src="./img/Social-Media/Telegram logo.svg" alt="Telegram" class=""></a></li>
+                        <li class="p-2 rounded-circle whatsApp-icon ms-4"><a href="#" ><img src="./img/Social-Media/WhatsApp logo.svg" alt="WhatsApp" class=""></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid container-lg d-flex justify-content-between mt-2">
+            <a href="#Main" class="navbar-brand me-5"><img src="./img/Butterfly-logo.svg" alt="Butterfly logo" class="navbar-logo"></a>
+            <button class="bg-success border-0 p-2 rounded-circle d-block d-xl-none navbar-toggle" id="navbar-toggler">
+                <img src="./img/navbar-icon.svg" alt="Hamburger" style="transition: all ease 0.5s;">
+            </button>
+            <div class="w-100 d-none d-xl-block">
+                <div class="row mb-4">
+                    <label class="col navbar-contact text-center">г. Алматы, ул. Абая д.68</label>
+                    <label class="col col-xl-5 col-xxl-4 navbar-contact nav-number">Звоните, Пн-Пт с 10:00-18:00 <span class="navbar-number ms-0 ms-xl-2">+7 (900) 900 - 10 - 10</span></label>
+                </div>
+                <div>
+                    <ul class="d-flex p-0 justify-content-between ms-5 ">
+                        <li class="mt-2"><a href="#Main" class="navbar-links active-nav-link">Главная</a></li>
+                        <li class="mt-2"><a href="#aboutCompany" class="navbar-links">О компании</a></li>
+                        <li class="mt-2"><a href="#aboutProduct" class="navbar-links">Об изделиях</a></li>
+                        <li class="mt-2"><a href="#feedback" class="navbar-links">Отзывы</a></li>
+                        <li class="mt-2"><a href="#cooperation" class="navbar-links">Сотрудничество</a></li>
+                        <li>
+                            <ul class="d-flex p-0 align-items-center">
+                                <li class="p-2 border border-3 rounded-circle ani-icon-SM"><a href="#" ><img src="./img/Social-Media/Instagram logo.svg" alt="Instagram" class=""></a></li>
+                                <li class="p-2 border border-3 rounded-circle ani-icon-SM ms-4"><a href="#" ><img src="./img/Social-Media/Telegram logo.svg" alt="Telegram" class=""></a></li>
+                                <li class="p-2 rounded-circle whatsApp-icon ms-4"><a href="#" ><img src="./img/Social-Media/WhatsApp logo.svg" alt="WhatsApp" class=""></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- MAIN -->
+    <section class="container-fluid hero-section d-flex flex-column justify-content-center pb-2" id="Main">
+        <div class="container-fluid container-md">
+            <div class="row flex-column mt-5 pt-3">
+                <div class="col">
+                    <div>
+                        <p class="text-light main-section-p mb-0 mt-5 mt-lg-3 street-furniture">Уличная мебель</p>
+                        <img src="./img/Wavy-text-decorator.svg" alt="wave" class="text-decorators">
+                    </div>
+                    <h1 class="text-light main-section-big-p fst-italic text-wrap">из натурального дерева</h1>
+                    <h3 class="text-light main-section-p" style="margin-left: 140px;">от Казахстанского производителя</h3>
+                </div>
+                <a href="#nothingSuitable" class="bg-success text-light px-4 py-4 border-0 rounded-4 order-btn mt-5 text-decoration-none">
+                    Оставить заявку
+                </a>
+                <ul class="row row-cols-3 justify-content-between p-0 mt-2 mt-xl-5 pt-5">
+                    <li class="col-12 col-xl-4 guarantee-text text-light mt-3 mt-lg-0"><div class="d-flex"><span class="border-0 rounded-circle bg-success" style="padding: 15px !important;"><img src="./img/Guarantee-icons/Delivery-icon.svg" alt="Delivery" class=""></span><p class="ms-1 m-0 mt-2">Доставка по всему Казахстану и в страны СНГ</p></div></li>
+                    <li class="col-12 col-xl-3 guarantee-text text-light mt-3 mt-lg-0"><div class="d-flex"><span class="border-0 rounded-circle bg-success" style="padding: 15px !important;"><img src="./img/Guarantee-icons/Cottage-icon.svg" alt="Cottage" class=""></span><p class="ms-1 m-0 mt-2">Для дома, дачи, зон отдыха и аквапарков</p></div></li>
+                    <li class="col-12 col-xl-3 guarantee-text text-light mt-3 mt-lg-0"><div class="d-flex"><span class="border-0 rounded-circle bg-success" style="padding: 15px !important;"><img src="./img/Guarantee-icons/Shield-icon.svg" alt="Shield" class=""></span><p class="ms-1 m-0 mt-2">Долговечная, и надёжная</p></div></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT COMPANY -->
+    <section class="container-fluid about-section pb-2 pb-lg-5" id="aboutCompany">
+        <div class="container">
+            <h2 class="section-headings mb-0">О компани</h2>
+            <div class="row justify-content-center">
+                <div class="col d-flex flex-column align-items-center align-self-center justify-content-center h-100 order-1 order-lg-0">
+                        <div class="justify-content-center mt-4">
+                            <p class="statistic-results m-0">12</p>
+                            <p class="statistic-text" style=" margin-bottom: -160px;">Лет на рынке</p>
+                            <img src="./img/Elipses-for-statistic/Elipse -group-1.svg" alt="Elipse1" class="position-relative">
+                        </div>
+                        <div class="justify-content-center mt-4">
+                            <p class="statistic-results m-0">2000+</p>
+                            <p class="statistic-text" style=" margin-bottom: -160px;">Довольных покупателей</p>
+                            <img src="./img/Elipses-for-statistic/Elipse -group-2.svg" alt="Elipse2" class="position-relative">
+                        </div>
+                        <div class="justify-content-center mt-5">
+                            <p class="own-production-statistic text-center m-0">Собственное <br> производство</p>
+                            <p class="statistic-text" style="line-height: 60px !important; margin-bottom: -170px;">в г. Алматы</p>
+                            <img src="./img/Elipses-for-statistic/Elipse -group-3.svg" alt="Elipse3" class="position-relative">
+                        </div>
+                        <a href="#nothingSuitable" class="bg-success text-light px-4 py-4 border-0 rounded-4 order-btn mt-3 w-100 mb-5 mb-lg-0 text-decoration-none">
+                            Оставить заявку
+                        </a>
+                 </div>
+                <div class="col col-5 mt-3 d-flex d-lg-block justify-content-center order-0 order-lg-1">
+                    <img src="./img/Statistic-section-image.png" alt="Proccess image" class="statistic-image-style">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT PRODUCT -->
+    <section class="container-fluid about-product-section overflow-hidden py-3" id="aboutProduct">
+        <div class="container">
+            <h2 class="section-headings">Об изделиях</h2>
+            <div class=" align-items-center d-lg-block">
+                <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-end d-md-block">
+                    <div class="uniqueness p-5 pe-1 pe-lg-5 pb-lg-4 border border-secondary-subtle position-relative detail1" data-aos="fade-down-right" data-aos-duration="1000">
+                        <div class="me-1 mb-2"><img src="./img/plus-icon.svg" alt="pros" class="p-1 bg-success rounded-circle position-relative" style="top: -40px; left: -40px;"></div>
+                        <h5 class="about-product-h" style="margin-top: -40px;">Обработонное дерево</h5>
+                        <p class="about-product-p m-0">Сохраняет первоначальный внешний вид даже под воздействием солнца и влаги</p>
+                    </div>
+                    <div class="uniqueness p-5 pe-1 pe-lg-5 pb-lg-4 border border-secondary-subtle position-relative detail2" data-aos="fade-down-left" data-aos-duration="1000">
+                        <div class="me-1 mb-2"><img src="./img/plus-icon.svg" alt="pros" class="p-1 bg-success rounded-circle position-relative" style="top: -40px; left: -40px;"></div>
+                        <h5 class="about-product-h" style="margin-top: -40px;">Натуральное дерево</h5>
+                        <p class="about-product-p m-0">Лиственница, ангарская сосна, дуб, карагач</p>
+                    </div>
+                    <div class="uniqueness p-5 pe-1 pe-lg-5 pb-lg-4 border border-secondary-subtle position-relative detail3" data-aos="fade-up-right" data-aos-duration="1000">
+                        <div class="me-1 mb-2"><img src="./img/plus-icon.svg" alt="pros" class="p-1 bg-success rounded-circle position-relative" style="top: -40px; left: -40px;"></div>
+                        <h5 class="about-product-h" style="margin-top: -40px;">Акриловая ткань</h5>
+                        <p class="about-product-p m-0">Обладает водо- и грязеоталкивающими свойствами,
+                            ткань сохраняет цвет окраса даже после стирки и длительного воздействия солнца</p>
+                    </div>
+                </div>
+                <img src="./img/About-Product-image.png" alt="Sofa" class="position-relative img-about-product1">
+                <img src="./img/About-Product-image.png" alt="Sofa" class="position-relative img-about-product2 d-md-none">
+                <a href="#nothingSuitable">
+                    <button class="bg-success col-12 col-lg-5 position-relative text-light px-4 py-4 border-0 rounded-4 order-btn about-product-btn">
+                        Оставить заявку
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- CATALOG -->
+    <section class="container-fluid catalog-section pb-4" id="aboutProduct">
+        <div class="container">
+            <h2 class="section-headings">Каталог</h2>
+            <div class="row row-cols-3 justify-content-evenly align-items-center gap-lg-4">
+                <div class="card col col-11 col-lg-3 px-0 border-0 rounded-5 catalog-card mt-4 h-100">
+                    <img src="./img/Catalog/Classical-lounger.png" alt="Classical-lounger" class="rounded-5 ">
+                    <p class="image-description card-title mt-3">Классический лежак</p>
+                </div>
+                <div class="card col col-11 col-lg-3 px-0 border-0 rounded-5 catalog-card mt-4 h-100">
+                    <img src="./img/Catalog/Deck-chair.png" alt="Deck-chair" class="rounded-5 ">
+                    <p class="image-description card-title mt-3">Кресло шезлонг</p>
+                </div>
+                <div class="card col col-5 col-lg-3 px-0 border-0 rounded-5 catalog-card mt-4 h-100">
+                    <img src="./img/Catalog/Trestle-bed.png" alt="Trestle-bed" class="rounded-5 ">
+                    <p class="image-description card-title mt-3">Топчан</p>
+                </div>
+                <div class="card col col-5 col-lg-3 px-0 border-0 rounded-5 catalog-card mt-4 h-100">
+                    <img src="./img/Catalog/Outdoor-furniture-set.png" alt="Outdoor-furniture-set" class="rounded-5 ">
+                    <p class="image-description card-title mt-3">Комплект уличной мебели</p>
+                </div>
+                <div class="card col col-5 col-lg-3 px-0 border-0 rounded-5 catalog-card mt-4">
+                    <img src="./img/Catalog/Dining-table.png" alt="Dining-table" class="rounded-5 ">
+                    <p class="image-description card-title mt-3">Обеденный стол со стульями</p>
+                </div>
+                <div class="card col col-5 col-lg-3 px-0 border-0 rounded-5 catalog-card mt-4">
+                    <img src="./img/Catalog/Coffee-table.png" alt="Coffee-table" class="rounded-5 ">
+                    <p class="image-description card-title mt-3">Кофейный столик</p>
+                </div>
+                <div class="card col col-5 col-lg-3 px-0 border-0 rounded-5 catalog-card mt-4">
+                    <img src="./img/Catalog/Bar-table.png" alt="Bar-table" class="rounded-5 ">
+                    <p class="image-description card-title mt-3">Столик-бар</p>
+                </div>
+                <div class="card col col-5 col-lg-3 px-0 border-0 rounded-5 catalog-card mt-4">
+                    <img src="./img/Catalog/Mattresses.png" alt="Mattresses" class="rounded-5 ">
+                    <p class="image-description card-title mt-3">Матрас для лежака</p>
+                </div>
+                <div class="card col col-5 col-lg-3 px-0 border-0 rounded-5 catalog-card mt-4">
+                    <img src="./img/Catalog/Folding-chair.png" alt="Folding-chair" class="rounded-5 ">
+                    <p class="image-description card-title mt-3">Складной стульчик</p>
+                </div>
+                <div class="card col col-5 col-lg-3 px-0 d-lg-none border-0 rounded-5 catalog-card mt-4">
+                    <img src="./img/Catalog/Bench-with-back.png" alt="Bench-with-back" class="rounded-5 ">
+                    <p class="image-description card-title mt-3">Скамейка со спинкой</p>
+                </div>
+                <a href="#nothingSuitable" class="bg-success text-light px-4 py-4 border-0 rounded-4 order-btn mt-5 w-100 text-decoration-none">
+                    Оставить заявку
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- NOTHING SUITABLE? -->
+    <section class="container-fluid nothing-suitable-section py-5" id="nothingSuitable">
+        <div class="container py-4">
+            <div class="popup d-flex flex-column justify-content-between align-items-center p-3" id="popup">
+                <h3 class="text-center fw-bold text-light" style="font-family: 'Inter' !important;">Ваша заявка принята!</h3>
+                <p class="text-center text-light" style="font-family: 'Inter' !important;">Мы свяжемся с вами в течении следующей недели.</p>
+                <button type="button" class="px-5 py-2 bg-success border-0 text-light popup-btn" onclick="closePopup()">OK</button>
+            </div>
+            <div>
+                <div>
+                    <h3 class="main-section-p text-light mb-0" style="line-height: normal !important;">Ничего не подошло?</h3>
+                    <img src="./img/Wavy-text-decorator.svg" alt="wave" style="margin-top: -20px; width: 35%;">
+                </div>
+                <h4 class="text-light fw-light form-little-p">Тогда мы можем изготовить для вас мебель</h4>
+                <h2 class="main-section-big-p text-light text-lg-center">по индивидуальному дизайну</h2>
+            </div>
+            <form class="col col-12 col-lg-5" id="nothingSuitableForm">
+                <input type="text" name="" class="w-100 my-4 rounded-5 border-0 p-3" placeholder="Ваше имя *" required id="ordinaryClientN">
+                <input type="tel" name="" class="w-100 mb-4 rounded-5 border-0 p-3" placeholder="Ваш телефон *" required id="ordinaryClientT">
+                <p class="personal-data-usage text-light px-2">Нажимая на кнопку, вы даете согласие на <a href="#tabs" class="link-success">обработку персональных данных</a></p>
+                <textarea name="" id="ordinaryClientM" cols="30" rows="5" class="w-100 mb-4 rounded-5 border-0 p-3" placeholder="Ваш комментарий" required></textarea>
+                <input type="submit" class="w-100 border-0 bg-success text-light p-4" value="Оставить заявку" style="font-family: 'Inter' !important; border-radius: 20px;">
+            </form>
+        </div>
+    </section>
+    <!-- HOW TO RECIEVE?  -->
+    <section class="container-fluid how-to-recieve p-3" id="aboutProduct">
+        <div class="container">
+            <h2 class="section-headings">Как получить заказ?</h2>
+            <div class="row justify-content-center">
+                <div class="d-flex flex-column flex-lg-row justify-content-evenly align-items-center align-items-lg-stretch mt-5">
+                    <div class="card rounded-4 border-0 p-4 py-5 mb-3" style="max-width: 23rem;" data-aos="fade-up" data-aos-duration="800">
+                        <img src="./img/How-to-recieve/Computer.svg" alt="" class="card-img-top  my-4 p-3" width="123px" height="122px">
+                        <img src="./img/Wavy-text-decorator.svg" alt="wave" class="my-4">
+                        <p class="card-titlee ">Заявка</p>
+                        <p class="card-p">Оставьте заявку и наш менеджер свяжется с вами в течении 15-ти минут</p>
+                    </div>
+                    <div class="card rounded-4 border-0 p-4 py-5 mb-3" style="max-width: 23rem; " data-aos="fade-up" data-aos-duration="800">
+                        <img src="./img/How-to-recieve/Award.svg" alt="" class="card-img-top p-3 my-4 " width="123px" height="122px">
+                        <img src="./img/Wavy-text-decorator.svg" alt="wave" class="my-4">
+                        <p class="card-titlee ">Предоплата</p>
+                        <p class="card-p">После внесения предоплаты в 100% от суммы чека мы отправляем заказ транспортными компаниями</p>
+                    </div>
+                    <div class="card rounded-4 border-0 p-4 py-5 mb-3" style="max-width: 23rem; " data-aos="fade-up" data-aos-duration="800">
+                        <img src="./img/How-to-recieve/Location.svg" alt="" class="card-img-top  my-4 p-3" width="123px" height="122px">
+                        <img src="./img/Wavy-text-decorator.svg" alt="wave" class="my-4">
+                        <p class="card-titlee ">Получение</p>
+                        <p class="card-p">Срок доставки зависит от вашего региона и занимает от 3-7 дней</p>
+                    </div>
+                </div>
+                <a href="#nothingSuitable" class="bg-success text-light px-4 py-4 border-0 rounded-4 order-btn mt-5 text-decoration-none">
+                    Оставить заявку
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- FEEDBACK -->
+    <section class="container-fluid feedback-section py-5" id="feedback">
+        <div class="container">
+            <h2 class="section-headings">Отзывы</h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-stretch mt-5">
+                    <div class="card border-0 rounded-5 pt-5 pb-3 px-4 mb-3 " style="width: 24rem;" data-aos="fade-right" data-aos-duration="800">
+                        <div class="d-flex">
+                            <img src="./img/FeedBack/Anna-Ivanova.png" alt="Anna Ivanova" width="90px" height="90px" class="me-3">
+                            <p class="card-titlee align-self-center mb-0">Анна <br> Иванова</p>
+                        </div>
+                        <img src="./img/Wavy-text-decorator.svg" alt="wave" class="my-4">
+                        <p class="card-p" style="font-size: 16px !important;">
+                            Качество и прочность этой мебели просто потрясают меня. Она изготовлена
+                            из высококачественного дерева, которое не только выглядит прекрасно, но
+                            и обладает прочными свойствами. Мебель выдерживает даже интенсивное использование
+                            и долгие периоды на открытом воздухе, сохраняя свою привлекательность и
+                            функциональность. Дачная мебель из дерева также добавила особый шарм и
+                            натуральность моему саду. Она гармонично вписывается в окружающую природу
+                            и создает приятную атмосферу для отдыха и проведения времени на природе.
+                            Кроме того, дерево придает мебели теплоту и природную красоту, что делает
+                            её привлекательной для глаза и приятной на ощупь.</p>
+                    </div>
+                    <div class="card border-0 rounded-5 pt-5 pb-3 px-4 mb-3 " style="width: 24rem;" data-aos="fade-up" data-aos-duration="800">
+                        <div class="d-flex" >
+                            <img src="./img/FeedBack/Kirill-Kotov.png" alt="Kirill Kotov" width="90px" height="90px" class="me-3">
+                            <p class="card-titlee align-self-center mb-0">Кирилл <br> Котов</p>
+                        </div>
+                        <img src="./img/Wavy-text-decorator.svg" alt="wave" class="my-4">
+                        <p class="card-p" style="font-size: 16px !important;">Я бы хотел поделиться своим восхищением относительно мебели
+                            из дерева для моей дачи. Она превратила мою отдыхающую зону в настоящий
+                            райский уголок и добавила неповторимую атмосферу природы и комфорта.
+                            Первое, что я заметил, это качество изготовления. Каждая деталь моей
+                            дачной мебели тщательно вырезана и скручена, создавая прочную и устойчивую
+                            конструкцию. Дерево, используемое в изготовлении, кажется очень прочным
+                            и долговечным, что делает мою мебель идеальной для использования на
+                            открытом воздухе.</p>
+                    </div>
+                    <div class="card border-0 rounded-5 pt-5 pb-3 px-4 mb-3 " style="width: 24rem;" data-aos="fade-left" data-aos-duration="800">
+                        <div class="d-flex">
+                            <img src="./img/FeedBack/Andrey-Golovin.png" alt="Andrey Golovin" width="90px" height="90px" class="me-3">
+                            <p class="card-titlee align-self-center mb-0">Андрей <br> Головин</p>
+                        </div>
+                        <img src="./img/Wavy-text-decorator.svg" alt="wave" class="my-4">
+                        <p class="card-p" style="font-size: 16px !important;">В целом, дачная мебель из дерева оправдала все наши
+                            ожидания и стала незаменимым элементом нашего загородного участка.
+                            Мы наслаждаемся ее красотой, прочностью и функциональностью, и настоятельно
+                            рекомендуем ее всем, кто ищет качественную и привлекательную мебель
+                            для отдыха на своей даче.</p>
+                    </div>
+                </div>
+                <a href="#nothingSuitable" class="bg-success text-light px-4 py-4 border-0 rounded-4 order-btn mt-5 text-decoration-none">
+                    Оставить заявку
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- CORPORATIVE CLIENTS -->
+    <section class="container-fluid corp-clients-section py-5" id="cooperation">
+        <div class="container pb-5">
+            <div class="popup d-flex flex-column justify-content-between align-items-center p-3" id="popup2">
+                <h3 class="text-center fw-bold text-light" style="font-family: 'Inter' !important;">Ваша заявка принята!</h3>
+                <p class="text-center text-light" style="font-family: 'Inter' !important;">Мы свяжемся с вами в течении следующей недели.</p>
+                <button type="button" class="px-5 py-2 bg-success border-0 text-light popup-btn" onclick="closePopup2()">OK</button>
+            </div>
+            <div class="w-50">
+                <h3 class="main-section-p text-light mb-0 text-wrap">Корпоративным клиентам</h3>
+                <img src="./img/Long-wavy-text-decorator.svg" alt="long-wave" class="d-none d-md-block long-text-decorator">
+                <img src="./img/Wavy-text-decorator.svg" alt="wave" class="d-block d-md-none mb-2">
+            </div>
+            <h2 class="text-light corp-condition-text">Так же, у нас предусмотрены <br> отдельные выгодные условия</h2>
+            <p class="text-light form-little-p d-flex justify-content-center justify-content-lg-end special-offer-margin">для пляжов, бассейнов, <br> аквапарков, и других бизнесов</p>
+
+            <form class="col col-12 col-lg-5 form-negative-margin" id="corporativeClientForm">
+                <input type="text" class="rounded-5 border-0 p-3 w-100" placeholder="Ваше имя *" required id="corporativeClientN">
+                <input type="tel" class="my-4 rounded-5 border-0 p-3 input-width" placeholder="Ваше телефон *" required style="width: 90%; " id="corporativeClientT">
+                <textarea cols="30" rows="5" class="mb-2 rounded-5 border-0 p-3 input-width" placeholder="Ваш комментарий" style="width: 80%;" id="corporativeClientM"></textarea>
+                <p class="personal-data-usage text-light">Нажимая на кнопку, вы даете согласие на <a href="#tabs" class="link-success">обработку персональных данных</a></p>
+                <input type="submit" class="w-100 border-0 bg-success text-light p-4" value="Оставить заявку" style="font-family: 'Inter' !important; border-radius: 20px;" >
+            </form>
+        </div>
+    </section>
+    <!-- OUR CLIENTS -->
+    <section class="container-fluid carousel-section py-4 " id="cooperation">
+        <div class="container">
+            <h2 class="section-headings">Наши клиенты</h2>
+            <div class="d-flex justify-content-center align-items-center py-5">
+                <div class="d-lg-flex align-items-center overflow-x-hidden" id="carousel" style="scroll-behavior: smooth;">
+                    <div class="d-block d-lg-flex slide-container justify-content-between" id="carousel-item1">
+                        <div class="d-flex card-container p-3 flex-column justify-content-between align-items-center border-0 rounded-5 overflow-hidden mt-3 mt-lg-0 me-3 card-size" >
+                            <div class="object-fit-cover"><img  src="./img/Clients/Miami-Beach.png" alt=""></div>
+                            <p class="client-cards-text align-text-bottom">Аквапарк Майами</p>
+                        </div>
+                        <div class="d-flex card-container p-3 flex-column justify-content-between align-items-center border-0 rounded-5 overflow-hidden mt-3 mt-lg-0 me-3 card-size" >
+                            <div class="object-fit-cover"><img  src="./img/Clients/Hawaii -aquapark.png" alt=""></div>
+                            <p class="client-cards-text">Аквапарк Гавайи</p>
+                        </div>
+                        <div class="d-flex card-container p-3 flex-column justify-content-between align-items-center border-0 rounded-5 overflow-hidden mt-3 mt-lg-0 me-3 card-size" >
+                            <div class="object-fit-cover"><img  src="./img/Clients/Aquatown-aquapark.png" alt=""></div>
+                            <p class="client-cards-text">Аквапарк Акватаун</p>
+                        </div>
+                        <div class="d-flex card-container p-3 flex-column justify-content-between align-items-center border-0 rounded-5 overflow-hidden mt-3 mt-lg-0 me-3 card-size" >
+                            <div class="object-fit-cover"><img  src="./img/Clients/Baganashil-pool.png" alt=""></div>
+                            <p class="client-cards-text">Бассейн Баганашил</p>
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-flex slide-container justify-content-between" id="carousel-item2">
+                        <div class="d-flex card-container p-3 flex-column justify-content-between align-items-center border-0 rounded-5 overflow-hidden mt-3 mt-lg-0 me-3 card-size" >
+                            <div class="object-fit-cover"><img  src="./img/Clients/Kamishi-ecoresort.png" alt=""></div>
+                            <p class="client-cards-text">Камыши</p>
+                        </div>
+                        <div class="d-flex card-container p-3 flex-column justify-content-between align-items-center border-0 rounded-5 overflow-hidden mt-3 mt-lg-0 me-3 card-size" >
+                            <div class="object-fit-cover"><img  src="./img/Clients/Country-village-RESORT.png" alt=""></div>
+                            <p class="client-cards-text">Кантри вилладж ресорт</p>
+                        </div>
+                        <div class="d-flex card-container p-3 flex-column justify-content-between align-items-center border-0 rounded-5 overflow-hidden mt-3 mt-lg-0 me-3 card-size" >
+                            <div class="object-fit-cover"><img  src="./img/Clients/Meduza-park.png" alt=""></div>
+                            <p class="client-cards-text">Медуза</p>
+                        </div>
+                        <div class="d-flex card-container p-3 flex-column justify-content-between align-items-center border-0 rounded-5 overflow-hidden mt-3 mt-lg-0 me-3 card-size" >
+                            <div class="object-fit-cover"><img  src="./img/Clients/Tay-Spa-center.png" alt=""></div>
+                            <p class="client-cards-text">Tay Спа</p>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-flex slide-container justify-content-between" id="carousel-item3">
+                        <div class="d-flex card-container p-3 flex-column justify-content-between align-items-center border-0 rounded-5 overflow-hidden me-3 card-size" >
+                            <div class="object-fit-cover"><img  src="./img/Clients/Makao-village-resort.png" alt=""></div>
+                            <p class="client-cards-text">Макао</p>
+                        </div>
+                        <div class="d-flex card-container p-3 flex-column justify-content-between align-items-center border-0 rounded-5 overflow-hidden me-3 card-size" >
+                            <div class="object-fit-cover"><img  src="./img/Clients/Shymbulak-mountain-resort.png" alt=""></div>
+                            <p class="client-cards-text">ГК Шымбулак</p>
+                        </div>
+                        <div class="d-flex card-container p-3 flex-column justify-content-between align-items-center border-0 rounded-5 overflow-hidden me-3 card-size" >
+                            <div class="object-fit-cover"><img  src="./img/Clients/Grand-park.png" alt=""></div>
+                            <p class="client-cards-text">ТРЦ "Грандпарк"</p>
+                        </div>
+                        <div class="d-flex card-container p-3 flex-column justify-content-between align-items-center border-0 rounded-5 overflow-hidden me-3 card-size" >
+                            <div class="object-fit-cover"><img  src="./img/Clients/Sunrise-konaev.png" alt=""></div>
+                            <p class="client-cards-text">Санрайз</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-lg-flex gap-3 carousel-nav justify-content-center">
+                <button class="border-0 p-2 rounded-circle carousel-indicator indicator-active" id="carousel-btn1"></button><button class="border-0 p-2 rounded-circle carousel-indicator" id="carousel-btn2"></button><button class="border-0 p-2 rounded-circle carousel-indicator" id="carousel-btn3"></button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="#nothingSuitable" class="bg-success text-light order-btn px-4 py-4 border-0 rounded-4 order-btn mt-5 w-100 text-decoration-none">
+                    Оставить заявку
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- GALLERY -->
+    <section class="container-fluid gallery-section py-4" id="cooperation">
+        <div class="container">
+            <h2 class="section-headings">Галерея</h2>
+            <div class="row g-3 gy-lg-5 gx-lg-4 justify-content-center justify-content-lg-between">
+                <img src="./img/Gallery/Deck-chair.png" alt="Deck chair" class="col col-6 col-lg-4" style="border-radius: 30px;">
+                <img src="./img/Gallery/Deck-chair-to-the-pool.png" alt="Deck by the pool" class="col col-6 col-lg-4" style="border-radius: 30px;">
+                <img src="./img/Gallery/Lounger.png" alt="Lounger" class="col col-6 col-lg-4" style="border-radius: 30px;">
+                <img src="./img/Gallery/Cottage.png" alt="Cottage" class="col col-6 col-lg-4 d-none d-lg-block" style="border-radius: 30px;">
+                <img src="./img/Gallery/Trestle.png" alt="Trestle" class="col col-6 col-lg-4" style="border-radius: 30px;">
+                <img src="./img/Gallery/Picnic-table.png" alt="Picnic table" class="col col-6 col-lg-4 d-none d-lg-block" style="border-radius: 30px;">
+            </div>
+        </div>
+    </section>
+    <!-- QUESTION & ANSWERS -->
+    <section class="container-fluid QnA-section py-5" id="cooperation">
+        <div class="container">
+            <h2 class="section-headings">Вопрос-ответ</h2>
+            <div class="">
+                <div class="" id="accordion">
+                    <div class="d-flex justify-content-between questions align-items-center px-2 py-3 not-active">
+                        <p class="mb-0 ">Какие максимальные обороты для «упрощенки» (СНР на упрощенной декларации)?</p>
+                        <img src="./img/Accordion-icon.svg" alt="accordion-indicator" class="acc-icon-rotation">
+                    </div>
+                    <div class="answers hide border-bottom border-dark-subtle">
+                        <p class="my-3 px-2 text-wrap answers" >Оборот привязан к МРП который каждый год меняется. Для упрощенки в ПОЛУГОДИЕ 24 038 МРП <br> на 2022 г. - 72 979 368, на 2023 г. - 82 931 100 ТГ.</p>
+                    </div>
+                </div>
+                <div class="" id="accordion">
+                    <div class="d-flex justify-content-between questions align-items-center px-2 py-3  not-active">
+                        <p class="mb-0 ">Какие обороты чтоб не встать на НДС?</p>
+                        <img src="./img/Accordion-icon.svg" alt="accordion-indicator">
+                    </div>
+                    <div class="hide border-bottom border-dark-subtle">
+                        <p class="my-3 px-2 text-wrap answers">Организации и предприниматели, у которых за 3 
+                            предшествующих последовательных календарных месяца сумма выручки от реализации товаров 
+                            (работ, услуг) не превысила в совокупности 2 миллиона рублей могут подать уведомление 
+                            и получить освобождение от исполнения обязанностей плательщика НДС на год ( ст. 145 НК РФ).</p>
+                    </div>
+                </div>
+                <div class="" id="accordion">
+                    <div class="d-flex justify-content-between questions align-items-center px-2 py-3  not-active">
+                        <p class="mb-0 ">Что делать если превысил оборот по НДС?</p>
+                        <img src="./img/Accordion-icon.svg" alt="accordion-indicator">
+                    </div>
+                    <div class="hide border-bottom border-dark-subtle">
+                        <p class="my-3 px-2 text-wrap answers"> В случае завышения минимального оборота необходимо представить 
+                            в территориальный ОГД заявление о регистрации в качестве плательщика НДС. Соблюсти данное правило 
+                            необходимо не позже 10-го числа месяца следующего за месяцем, в котором было обнаружено превышение.</p>
+                    </div>
+                </div>
+                <div class="" id="accordion">
+                    <div class="d-flex justify-content-between questions align-items-center px-2 py-3  not-active">
+                        <p class="mb-0 ">Что делать если превысил оборот по НДС?</p>
+                        <img src="./img/Accordion-icon.svg" alt="accordion-indicator">
+                    </div>
+                    <div class="hide border-bottom border-dark-subtle">
+                        <p class="my-3 px-2 text-wrap answers"> В случае завышения минимального оборота необходимо представить 
+                            в территориальный ОГД заявление о регистрации в качестве плательщика НДС. Соблюсти данное правило 
+                            необходимо не позже 10-го числа месяца следующего за месяцем, в котором было обнаружено превышение.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACTS -->
+    <section class="container-fluid contact-section px-0 px-lg-2" id="cooperation">
+        <div class="container">
+            <h2 class="section-headings">Контакты</h2>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4492.717806196375!2d37.6007581!3d55.7348928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b0c5fa462b1%3A0xd82d6f0c4213c43b!2z0JrRgNGL0LzRgdC60LjQuSDQvNC-0YHRgg!5e0!3m2!1sru!2s!4v1693470203626!5m2!1sru!2s"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact-section d-block d-lg-none" style="z-index: -2; " id="map"></iframe>
+        <div class="container-fluid container-lg px-0 px-lg-2">
+            <div class="bg-success contact-card-position mt-lg-5 pb-lg-3" >
+                <div class=" text-light p-5 footer-card-width">
+                    <p class="contact-text m-0">Адрес - Москва, Степана Разина 119</p>
+                    <p class="contact-text m-0">Телефон - 7 982 658 25 85</p>
+                    <p class="contact-text m-0">ТОО «Консалтинговая Компания Financial-Tax Analytics»</p>
+                    <p class="contact-text m-0">БИН 181 040 010 133</p>
+                    <p class="contact-text m-0">Юридический адрес: г.Астана, пр.Мәңгілік Ел, 19, к.304</p>
+                    <p class="contact-text m-0">Почтовый адрес: г.Астана, ул.Кордай, 2, кв.60</p>
+                    <p class="contact-text m-0">ИИК KZ76 9650 3F00 0817 5335 БИК</p>
+                    <p class="contact-text mb-4">БИК IRTYKZKA в АО "ForteBank"</p>
+                    <p class="contact-text">мобильный/ватсап + 7 778 775 77 68, info@fintax.kz</p>
+                </div>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4492.717806196375!2d37.6007581!3d55.7348928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b0c5fa462b1%3A0xd82d6f0c4213c43b!2z0JrRgNGL0LzRgdC60LjQuSDQvNC-0YHRgg!5e0!3m2!1sru!2s!4v1693470203626!5m2!1sru!2s"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact-section d-none d-lg-block" style="z-index: -2; " id="map"></iframe>
+    </section>
+    
+    <script src="./JS/script.js"></script>
+    <script src="./JS/dataStore.js"></script>
+    <script src="./JS/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -202,6 +202,10 @@ li{
     line-height: normal;
 }
 
+.ellipse-width{
+    width: auto;
+}
+
 .own-production-statistic{
     color: #9EAF7C;
     font-size: 50px;
@@ -409,6 +413,7 @@ input,textarea::placeholder{
 }
 
 .card-container{
+    box-sizing: content-box;
     background: #fff;
     height: 100%;
     width: 100%;
@@ -698,8 +703,16 @@ input,textarea::placeholder{
         font-size: 38px;
     }
 
+    .statistic-results{
+        font-size: 70px;
+    }
+
+    .ellipse-width{
+        width: 440px;
+    }
+
     .about-product-section{
-        min-height: 250vh;
+        max-height: 220vh;
     }
 
     .img-about-product1{
@@ -777,8 +790,8 @@ input,textarea::placeholder{
     }
 
     .card-size{
-        width: 210px;
-        height: 210px;
+        width: 190px;
+        height: 200px;
     }
 
     .contact-card-position{

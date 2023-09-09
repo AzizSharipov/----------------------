@@ -375,6 +375,10 @@ input,textarea::placeholder{
     background-color: #F3F1EC;
 }
 
+.feedback-card-w{
+    width: 24rem;
+}
+
 .corp-clients-section{
     min-height: 100vh;
     background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/Corporative-clients.png);
@@ -712,7 +716,7 @@ input,textarea::placeholder{
     }
 
     .about-product-section{
-        max-height: 220vh;
+        max-height: 180vh;
     }
 
     .img-about-product1{
@@ -792,6 +796,10 @@ input,textarea::placeholder{
     .card-size{
         width: 190px;
         height: 200px;
+    }
+
+    .feedback-card-w{
+        width: 22rem;
     }
 
     .contact-card-position{

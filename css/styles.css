@@ -4,13 +4,13 @@
 
 .popup{
     position: absolute;
-    background: #0000002f;
+    background: #00000047;
     backdrop-filter: blur(10px);
     margin-top: 150px;
     left: 40%;
     height: 17rem; width: 18rem;
     transform: scale(0.001);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 5px #00000033;
     transition: transform 0.3s, top 0.3s;
 }
 
@@ -21,6 +21,11 @@
 .popup-btn{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.20);
     border-radius: 6px;
+}
+.popup-btn:active{
+    background-color: #607040 !important;
+    transform: scale(0.8);
+    transition: all ease 0.4s;
 }
 
 .navbar-dropdown{
@@ -38,13 +43,39 @@
     margin-right: -30px;
 }
 
-.hero-section{
+.hero-section {
     min-height: 100vh;
-    background: url(../img/Image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)),100%, url(../img/Greeting-section-background.png);
-    background-size: contain, cover;
-    background-repeat: no-repeat;
-    background-position:bottom, top;
+    animation: altering-bg 20s linear infinite;
 }
+
+@keyframes altering-bg {
+    0% {
+            background: url(../img/Image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)),100%, url(../img/hero-backgrounds/Greeting-section-background.png);
+            background-size: contain, cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+    }
+    33.3% {
+            background: url(../img/Image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)),100%, url(../img/hero-backgrounds/hero-bg-slide-2.png);
+            background-size: contain, cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+    }
+    66.6% {
+            background: url(../img/Image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)),100%, url(../img/hero-backgrounds/hero-bg-slide-3.png);
+            background-size: contain, cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+    }
+    100% {    
+            background: url(../img/Image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)),100%, url(../img/hero-backgrounds/Greeting-section-background.png);
+            background-size: contain, cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+    }
+}
+
+
 
 li{
     list-style-type: none;
@@ -96,12 +127,14 @@ li{
 
 .whatsApp-icon{
     background-color: #0be40b;
-    border: solid 3.6px #0be40b !important;
+    border: solid 3.6px #0be40b ;
 }
 
 .whatsApp-icon:hover{
     transition: all ease 0.3s;
-    opacity: 85%;
+    background-color: #07a307;
+    /* border: solid 3.6px #07a307; */
+    /* opacity: 85%; */
 }
 
 .ani-icon-SM:hover{
@@ -168,7 +201,10 @@ li{
 }
 
 .order-btn:active{
-    opacity: 95%;
+    opacity: 85%;
+    transition: all ease 0.2s;
+    transform: scale(0.9);
+    background-color: #789e27 !important;
 }
 
 .guarantee-text{
@@ -229,7 +265,7 @@ li{
 }
 
 .about-product-section{
-    min-height: 80vh;
+    height: 125vh;
     background-color: #F3F1EC;
 }
 
@@ -310,10 +346,38 @@ li{
 
 .nothing-suitable-section{
     min-height: 100vh;
-    background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/Nothing-suitable.png);
+    /* background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/Nothing-suitable.png); */
     background-position: bottom, top, center;
     background-repeat: no-repeat !important;
     background-size: contain, contain, cover;
+    animation: alter-bg-form1 20s linear infinite;
+}
+
+@keyframes alter-bg-form1 {
+    0% {
+            background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form1/Nothing-suitable.png);
+            background-size: contain, contain, cover;
+            background-repeat: no-repeat !important;
+            background-position: bottom, top, center;
+    }
+    33.3% {
+            background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form1/form-slide2.png);
+            background-size: contain, contain, cover;
+            background-repeat: no-repeat !important;
+            background-position: bottom, top, center;
+    }
+    66.6% {
+            background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form1/form-slide3.png);
+            background-size: contain, contain, cover;
+            background-repeat: no-repeat !important;
+            background-position: bottom, top, center;
+    }
+    100% {    
+            background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form1/Nothing-suitable.png);
+            background-size: contain, contain, cover;
+            background-repeat: no-repeat !important;
+            background-position: bottom, top, center;
+    }
 }
 
 .form-little-p{
@@ -385,6 +449,34 @@ input,textarea::placeholder{
     background-position: bottom, top, center;
     background-repeat: no-repeat !important;
     background-size: contain, contain, cover;
+    animation: alter-bg-form2 20s linear infinite;
+}
+
+@keyframes alter-bg-form2 {
+    0% {
+            background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form2/Corporative-clients.png);
+            background-size: contain, contain, cover;
+            background-repeat: no-repeat !important;
+            background-position: bottom, top, center;
+    }
+    33.3% {
+            background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form2/form2-slide2.png);
+            background-size: contain, contain, cover;
+            background-repeat: no-repeat !important;
+            background-position: bottom, top, center;
+    }
+    66.6% {
+            background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form2/form2-slide3.png);
+            background-size: contain, contain, cover;
+            background-repeat: no-repeat !important;
+            background-position: bottom, top, center;
+    }
+    100% {    
+            background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form2/Corporative-clients.png);
+            background-size: contain, contain, cover;
+            background-repeat: no-repeat !important;
+            background-position: bottom, top, center;
+    }
 }
 
 .corp-condition-text{
@@ -424,8 +516,8 @@ input,textarea::placeholder{
 }
 
 .card-size{
-    width: 260px; 
-    height: 260px;
+    width: 240px; 
+    height: 240px;
 }
 
 .client-cards-text{
@@ -711,12 +803,16 @@ input,textarea::placeholder{
         font-size: 70px;
     }
 
+    .statistic-image-style{
+        width: 420px;
+    }
+
     .ellipse-width{
         width: 440px;
     }
 
     .about-product-section{
-        max-height: 180vh;
+        min-height: 200vh !important;
     }
 
     .img-about-product1{

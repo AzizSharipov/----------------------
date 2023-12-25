@@ -51,33 +51,24 @@
 
 .hero-section {
     min-height: 100vh;
+    background-size: contain, cover !important;
+    background-repeat: no-repeat !important;
+    background-position: bottom !important;
     animation: altering-bg 20s linear infinite;
 }
 
 @keyframes altering-bg {
     0% {
             background: url(../img/Image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)),100%, url(../img/hero-backgrounds/Greeting-section-background.png);
-            background-size: contain, cover;
-            background-repeat: no-repeat;
-            background-position: bottom;
     }
     33.3% {
             background: url(../img/Image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)),100%, url(../img/hero-backgrounds/hero-bg-slide-2.png);
-            background-size: contain, cover;
-            background-repeat: no-repeat;
-            background-position: bottom;
     }
     66.6% {
             background: url(../img/Image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)),100%, url(../img/hero-backgrounds/hero-bg-slide-3.png);
-            background-size: contain, cover;
-            background-repeat: no-repeat;
-            background-position: bottom;
     }
     100% {    
             background: url(../img/Image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)),100%, url(../img/hero-backgrounds/Greeting-section-background.png);
-            background-size: contain, cover;
-            background-repeat: no-repeat;
-            background-position: bottom;
     }
 }
 
@@ -204,6 +195,9 @@ li{
     font-weight: 400;
     line-height: 120%; /* 21.6px */
     letter-spacing: -0.36px;
+    -webkit-box-shadow: 0px 0px 78px -20px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 78px -20px rgba(0,0,0,1);
+    box-shadow: 0px 0px 78px -20px rgba(0,0,0,1);
 }
 
 .order-btn:active{
@@ -271,7 +265,7 @@ li{
 }
 
 .about-product-section{
-    height: 125vh;
+    height: 135vh;
     background-color: #F3F1EC;
 }
 
@@ -279,7 +273,6 @@ li{
     max-width: 460px;
     border-radius: 20px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(223, 224, 226, 0.20) 0.01%, rgba(143, 145, 149, 0.20) 100%);
-    box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.11);
     backdrop-filter: blur(10.5px);
 }
 
@@ -306,6 +299,8 @@ li{
 .detail1{
     z-index: 2;
     top: 30px;
+    box-shadow:  -15px -15px 40px #5e625faf,
+                15px 15px 20px #d0cdc6;
 }
 
 .detail2{
@@ -313,6 +308,8 @@ li{
     z-index: 0;
     top: -100px;
     right: 40px;
+    box-shadow:  -15px -15px 40px #5e625faf,
+                15px 15px 20px #d0cdc6;
 }
 
 .detail3{
@@ -320,6 +317,8 @@ li{
     z-index:2;
     top: 340px;
     right: -300px;
+    box-shadow:  -15px -15px 40px #5e625faf,
+                15px 20px 20px #d0cdc6;
 }
 
 .about-product-btn{
@@ -340,6 +339,7 @@ li{
 .catalog-card{
     background-color: #F3F1EC !important;
     min-height: 13rem;
+    
 }
 
 .image-description{
@@ -352,37 +352,24 @@ li{
 
 .nothing-suitable-section{
     min-height: 100vh;
-    /* background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/Nothing-suitable.png); */
-    background-position: bottom, top, center;
+    background-position: bottom, top, center !important;
     background-repeat: no-repeat !important;
-    background-size: contain, contain, cover;
+    background-size: contain, contain, cover !important;
     animation: alter-bg-form1 20s linear infinite;
 }
 
 @keyframes alter-bg-form1 {
     0% {
             background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form1/Nothing-suitable.png);
-            background-size: contain, contain, cover;
-            background-repeat: no-repeat !important;
-            background-position: bottom, top, center;
     }
     33.3% {
             background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form1/form-slide2.png);
-            background-size: contain, contain, cover;
-            background-repeat: no-repeat !important;
-            background-position: bottom, top, center;
     }
     66.6% {
             background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form1/form-slide3.png);
-            background-size: contain, contain, cover;
-            background-repeat: no-repeat !important;
-            background-position: bottom, top, center;
     }
     100% {    
             background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form1/Nothing-suitable.png);
-            background-size: contain, contain, cover;
-            background-repeat: no-repeat !important;
-            background-position: bottom, top, center;
     }
 }
 
@@ -451,37 +438,36 @@ input,textarea::placeholder{
 
 .corp-clients-section{
     min-height: 100vh;
-    background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/Corporative-clients.png);
-    background-position: bottom, top, center;
+    background-position: bottom, top, center !important;
     background-repeat: no-repeat !important;
-    background-size: contain, contain, cover;
+    background-size: contain, contain, cover !important;
     animation: alter-bg-form2 20s linear infinite;
 }
 
 @keyframes alter-bg-form2 {
     0% {
             background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form2/Corporative-clients.png);
-            background-size: contain, contain, cover;
-            background-repeat: no-repeat !important;
-            background-position: bottom, top, center;
+            /* background-size: contain, contain, cover; */
+            /* background-repeat: no-repeat !important; */
+            /* background-position: bottom, top, center; */
     }
     33.3% {
             background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form2/form2-slide2.png);
-            background-size: contain, contain, cover;
-            background-repeat: no-repeat !important;
-            background-position: bottom, top, center;
+            /* background-size: contain, contain, cover; */
+            /* background-repeat: no-repeat !important; */
+            /* background-position: bottom, top, center; */
     }
     66.6% {
             background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form2/form2-slide3.png);
-            background-size: contain, contain, cover;
-            background-repeat: no-repeat !important;
-            background-position: bottom, top, center;
+            /* background-size: contain, contain, cover; */
+            /* background-repeat: no-repeat !important; */
+            /* background-position: bottom, top, center; */
     }
     100% {    
             background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form2/Corporative-clients.png);
-            background-size: contain, contain, cover;
-            background-repeat: no-repeat !important;
-            background-position: bottom, top, center;
+            /* background-size: contain, contain, cover; */
+            /* background-repeat: no-repeat !important; */
+            /* background-position: bottom, top, center; */
     }
 }
 
@@ -604,6 +590,9 @@ input,textarea::placeholder{
 
 .contact-card-position{
     position: absolute !important;
+    -webkit-box-shadow: 0px 0px 100px -1px rgba(0,0,0,0.69);
+    -moz-box-shadow: 0px 0px 100px -1px rgba(0,0,0,0.69);
+    box-shadow: 0px 0px 100px -1px rgba(0,0,0,0.69);
 }
 
 .footer-card-width{
@@ -636,12 +625,32 @@ input,textarea::placeholder{
     .nav-number{
         margin-right: 10px;
     }
+
+    .about-product-section{
+        min-height: 175vh;
+    }
+
+    .detail1{
+        width: 350px;
+    }
+    
+    .detail2{
+        width: 350px;
+        float: right;
+        right: 0px;
+
+    }
+    
+    .detail3{
+        width: 350px;
+        float: right;
+    }
 }
 
 
 @media (max-width: 1040px) {
     .about-product-section{
-        min-height: 160vh;
+        min-height: 170vh;
     }
 
     .img-about-product1{

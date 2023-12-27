@@ -108,6 +108,7 @@ li{
     line-height: normal;
     letter-spacing: -1.08px;
     text-decoration: none;
+    transition: 0.5s
 }
 
 .navbar-links:hover{
@@ -447,27 +448,15 @@ input,textarea::placeholder{
 @keyframes alter-bg-form2 {
     0% {
             background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form2/Corporative-clients.png);
-            /* background-size: contain, contain, cover; */
-            /* background-repeat: no-repeat !important; */
-            /* background-position: bottom, top, center; */
     }
     33.3% {
             background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form2/form2-slide2.png);
-            /* background-size: contain, contain, cover; */
-            /* background-repeat: no-repeat !important; */
-            /* background-position: bottom, top, center; */
     }
     66.6% {
             background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form2/form2-slide3.png);
-            /* background-size: contain, contain, cover; */
-            /* background-repeat: no-repeat !important; */
-            /* background-position: bottom, top, center; */
     }
     100% {    
             background:  url(../img/Image-decorator.png),url(../img/Rotated-image-decorator.png),linear-gradient(rgba(68, 66, 55, 0.70), rgba(68, 66, 55, 0.70)), 100%, 100%, url(../img/form2/Corporative-clients.png);
-            /* background-size: contain, contain, cover; */
-            /* background-repeat: no-repeat !important; */
-            /* background-position: bottom, top, center; */
     }
 }
 
@@ -627,7 +616,7 @@ input,textarea::placeholder{
     }
 
     .about-product-section{
-        min-height: 175vh;
+        height: 175vh;
     }
 
     .detail1{
@@ -648,7 +637,8 @@ input,textarea::placeholder{
 }
 
 
-@media (max-width: 1040px) {
+
+@media (max-width: 1060px) {
     .about-product-section{
         min-height: 170vh;
     }
@@ -873,7 +863,7 @@ input,textarea::placeholder{
     }
 
     .about-product-section{
-        min-height: 200vh !important;
+        height: 200vh !important;
     }
 
     .img-about-product1{

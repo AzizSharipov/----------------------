@@ -108,7 +108,7 @@ li{
     line-height: normal;
     letter-spacing: -1.08px;
     text-decoration: none;
-    transition: 0.5s
+    transition: .2s
 }
 
 .navbar-links:hover{
